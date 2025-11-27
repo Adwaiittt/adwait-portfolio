@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Adwait — Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <canvas id="bg-canvas"></canvas>
+    <button id="theme-toggle" class="theme-toggle">🌙 Dark</button>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="logo"><span class="prompt">~$</span> Adwait</h1>
+        <nav class="nav">
+          <a href="#about">about</a>
+          <a href="#experience">experience</a>
+          <a href="#projects">projects</a>
+          <a href="#contact">contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="terminal-prompt"><span class="prompt">~$</span> whoami</div>
+          <h2 class="hero-title"><span id="name"></span><span class="cursor">_</span></h2>
+          <p class="hero-sub"><span class="prompt">~$</span> ./bio.sh</p>
+          <p class="hero-bio">Cybersecurity student at Symbiosis, graduating 2027.<br/>Passionate about ethical hacking, problem-solving, and leadership.</p>
+          <div class="hero-cta">
+            <a class="btn" href="#projects">projects</a>
+            <a class="btn ghost" href="#contact">contact</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section container">
+        <div class="terminal-prompt"><span class="prompt">~$</span> cat about.md</div>
+        <p>Hi, I'm Adwait, a 3rd-year Cybersecurity student at Symbiosis, expected to graduate in 2027. I'm passionate about cybersecurity and continuously working to master both fundamental and advanced ethical hacking techniques. I consider leadership, problem-solving, and task execution to be my strongest skills. During my recent 2-month internship, I was honored to be awarded Intern of the Month twice, recognizing my dedication and efficiency.</p>
+      </section>
+
+      <section id="experience" class="section container">
+        <div class="terminal-prompt"><span class="prompt">~$</span> cat experience.log</div>
+        <div class="experience-list">
+          <article class="experience-card">
+            <div class="experience-header">
+              <h4>Project Intern</h4>
+              <span class="experience-date">Recent</span>
+            </div>
+            <p class="experience-company">Arc Solutions</p>
+            <p>Contributed to project initiatives and gained hands-on experience in development and problem-solving.</p>
+          </article>
+          <article class="experience-card">
+            <div class="experience-header">
+              <h4>Project Intern & Head</h4>
+              <span class="experience-date">Recent</span>
+            </div>
+            <p class="experience-company">Syniris</p>
+            <p>Served as Project Intern and Head, leading initiatives and delivering results. Won 2 Intern of the Month awards for exceptional performance and dedication.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section container">
+        <div class="terminal-prompt"><span class="prompt">~$</span> ls projects/</div>
+        <div class="grid">
+          <article class="card">
+            <h4>Project 1</h4>
+            <p>Coming soon... Add your first project here. <a href="#" class="link-accent">repo</a></p>
+          </article>
+          <article class="card">
+            <h4>Project 2</h4>
+            <p>Coming soon... Add your second project here. <a href="#" class="link-accent">repo</a></p>
+          </article>
+          <article class="card">
+            <h4>Project 3</h4>
+            <p>Coming soon... Add your third project here. <a href="#" class="link-accent">repo</a></p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section container">
+        <div class="terminal-prompt"><span class="prompt">~$</span> cat contact.txt</div>
+        <p>📧 <a href="mailto:adwaitb.40@gmail.com" class="link-accent">adwaitb.40@gmail.com</a></p>
+        <p>🔗 <a href="https://github.com/adwaiittt" target="_blank" rel="noopener" class="link-accent">github.com/adwaiittt</a></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container"><span class="prompt">~$</span> © <span id="year"></span> Adwait</div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
